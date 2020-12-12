@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <title>vue2-01</title>
+
+    <!-- 在iphone5 模式下 1rem==16px font-size=16px -->
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+   
+   
+    <script>
+      let htmlWidth=document.documentElement.clientWidth||documnet.body.clientWidth;
+      let htmlDom=document.getElementsByTagName('html')[0];
+      if(htmlWidth>750){
+        htmlWidth=750
+      }
+      console.log(htmlWidth)
+      htmlDom.style.fontSize=htmlWidth/20+'px';
+    </script>
+  </body>
+ 
+</html>
